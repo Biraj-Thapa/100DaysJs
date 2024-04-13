@@ -1,19 +1,23 @@
-// Write a function that takes an array of integers as input  and removes any duplicate elements,returning a new array with only unique elemenets.
+// Write a function that takes a string as input and return count of vowels in the string.Consider 'a','e','i','o' and 'u' as vowels (both lowercase and uppercase)
 
-//The new set() method  in j creates a new set obejct.A Set object is a collection of unique values, It can store any type of value,whether primitive values or b=object references.
+//Constraints:
 
-//constraints 
+//The input string may contain letters in both uppercase and lowercase.
+//the output should be a non-negative integrer representing the count of vowels in the input string.
 
-///The input array contain both positibr sn negative integers.
-//The input array ma be empty.
-//The elements in the array are not guranted to be sorted.
-//The output array should retain original order of element from theinput array.
-
-const duplicateRemover=(arr)=>{
-    const newArr =[...new Set(arr)];
-    return newArr;
-
+const countVowels=(str)=>{
+    let vowels=['a','e','i','o','u']
+    let count=0;
+    let splittedStr=str.split('');
+    for(let char of splittedStr){
+        if (vowels.includes(char.toLowerCase())){
+            count++;
+        }
+       
+    }
+   
+    return count;
 }
-console.log(duplicateRemover([1,2,3,4,4,5]))
-console.log(duplicateRemover([1,2,3,442,34,2]))
-console.log(duplicateRemover([]))
+console.log(countVowels("HIII"))
+console.log(countVowels("HELLO WORLD"))
+console.log(countVowels("HYY"))
