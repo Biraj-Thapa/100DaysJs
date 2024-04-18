@@ -21,3 +21,16 @@ console.log(findMin([4,3,1,5,6]))
 console.log(findMin([4,-3,-2,5,-11]))
 console.log(findMin([]))
 console.log(findMin([100,500,600,50]))
+day
+
+
+
+//2nd method
+
+const findMinm=(arr)=>{
+    return Math.min(...arr)
+}
+console.log(findMinm([4,3,1,0,5,6]))
+console.log(findMinm([4,-3,-2,5,-11]))
+console.log(findMinm([]))
+console.log(findMinm([100,500,600,50,20]))
