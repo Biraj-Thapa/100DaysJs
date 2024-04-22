@@ -28,5 +28,20 @@ return maxString
 console.log(LongestString("hello Biraj Ji"))
 console.log(LongestString('I am Batman '))
 
+//2nd Method
+
+let longestWord=(word)=>{
+    let arrWord=word.split(" ")
+    let result=arrWord.reduce((acc,cur)=>{
+        return cur.length>acc.length?cur:acc;
+
+    },"")
+    return result;
+    
+}
+console.log(longestWord("hiiiiiiii I am Biraj"))
+console.log(longestWord("w u t tooo"))
+console.log(longestWord("he dcfdqgdvxz wc"))
+
 
 

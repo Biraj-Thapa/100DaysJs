@@ -19,3 +19,4 @@ const calculateMean=(arr)=>{
 console.log(calculateMean([]));
 console.log(calculateMean([1,2,3,4]));
 console.log(calculateMean([100,200,300]))
+console.log(calculateMean([-1,0,1,-2]))

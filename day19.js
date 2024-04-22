@@ -12,4 +12,4 @@ const checkStr = (str, subStr) => {
 };
 console.log(checkStr(("hello Hii"),("hello")));
 console.log(checkStr(("biraj thapa"),("Biraj")));
-console.log(checkStr(("hii i am biraj"),("hello")))
+console.log(checkStr(("hii i am biraj"),("hi")))
