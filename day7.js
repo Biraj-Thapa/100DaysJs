@@ -15,6 +15,14 @@ const findMax=(arr)=>{
         return maxArr;
     };
     
-
-
 console.log(findMax([1,2,3,4]))
+console.log(findMax([20,60,40,30,35,38]))
+
+ //find Min
+
+ const findMin=(arr)=>{
+    return Math.min(...arr)
+
+ }
+ console.log(findMin([1,2,3,4]))
+ console.log(findMin([20,60,40,30,35,38]))

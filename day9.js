@@ -21,3 +21,17 @@ const calculateAverage=(arr)=>{
 
 console.log(calculateAverage([1,2,3,4,5]))
 console.log(calculateAverage([1,50,100]))
+
+//using reduce
+const reduceAvearge=(arr)=>{
+    let result=arr.reduce((acc,cur)=>{
+        return ans=acc+=cur;
+},0)
+return average=ans/arr.length
+
+
+    
+}
+
+console.log(calculateAverage([1,2,3,4,5]))
+console.log(calculateAverage([1,50,100]))
